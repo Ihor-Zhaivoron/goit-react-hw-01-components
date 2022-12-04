@@ -1,5 +1,5 @@
-import { Profile } from "Сomponents/Profile/Profile";
-import { Statistics } from "Сomponents/Statistics/Statistics";
+import { Profile } from "components/Profile/Profile";
+import { Statistics } from "components/Statistics/Statistics";
 
 import user from "user.json";
 import data from "data.json";
