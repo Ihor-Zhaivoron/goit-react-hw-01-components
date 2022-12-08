@@ -5,19 +5,18 @@ import css from "./StatsList.module.css";
 
 export function StatsList({ title, stats }) {
   return (<section className={css.statistics}>
-        {title ? <h2 className={css.title}>Upload stats</h2> : ''}
+    {title ? <h2 className={css.title}>Upload stats</h2> : ''}
 
-      <ul className={css.statList}>
-        {stats.map(stat => (
-          <li key={stat.id}>
-            <StatsItem
-              label={stat.label}
-              percentage={stat.percentage}
-            />
-          </li>))}
-   
-  </ul>
-</section>)
+    <ul className={css.statList}>
+      {stats.map(stat => (
+        <StatsItem
+          key={stat.id}
+          label={stat.label}
+          percentage={stat.percentage}
+        />
+      ))}
+    </ul>
+  </section>);
 };
 
 StatsList.propTypes = {
