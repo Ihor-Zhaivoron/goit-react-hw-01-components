@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { StatsItem } from './StatsItem';
 import css from "./StatsList.module.css";
 
-export function StatsList({ title, stats }) {
+export const StatsList = ({ title, stats }) => {
   return (<section className={css.statistics}>
     {title ? <h2 className={css.title}>Upload stats</h2> : ''}
 
